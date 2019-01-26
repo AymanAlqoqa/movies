@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #403a46eb;
+}
+.pageTitle{
+    text-align: center;
+    color: #ffd324;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+}
+.form{
+    text-align: center;
+    width: 100%;
+    min-width: 350px;
+}
+#searchFor{
+    max-width: 500px;
+    width: 40%;
+    line-height: 2;
+    margin-right: 5px;
+    padding: 5px;
+    outline: none;
+    background-color: #bbbbbbd4;
+    font-size: 0.95em;
+    border-radius: 10px;
+    border-color: #4e2b0d;
+}
+#searchBtn{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #0e3867;
+    border-color: #4e2b0d;
+}
+#searchBtn:hover{
+    color: rgb(81, 255, 0);
+}
+/* styling the result  */
+.title{
+    text-align: center;
+    margin: 20px 0;
+    color: #E91E63;
+    font-size: 2em;
+    text-shadow: 2px 1px #000000;
+    letter-spacing:5px;
+    font-weight: bold;
+}
+.poster{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border: 5px solid #b77171;
+    box-shadow: 2px 2px #1a1b18;
+}
+figure{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.plot{
+    display: block;
+    width: 80;
+    width: 80%;
+    margin: 10px auto;
+    font-style: italic;
+    line-height: 2em;
+    text-align: left;
+    color: #ecc054;
+    font-size: 1.5em;
+}
+.error{
+    position: sticky;
+    top: 10px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #e02d1b;
+    color: red;
+}
+.errorDialog{
+    clear: both;
+    position: relative;
+    margin: auto;
+    top: 21%;
+
+}
+/* make it responsive */
+@media only screen and (max-width:400px){
+    .poster{
+        width: 150px;
+        height: 150px;
+    }
+    .title{
+        font-size: 1.5em;
+    }
+    #searchBtn{
+        padding: 2px;
+        border-radius: 3px;
+        font-size: 0.8em;
+    }
+    #searchFor{
+        max-width: 100px;
+        width: 40%;
+        line-height: 1;
+        margin-right: 2px;
+        padding: 2px;
+        outline: none;
+        background-color: #bbbbbbd4;
+        font-size: 0.8em;
+        border-radius: 5px;
+    }
+    .plot{
+        font-size: 0.8em;
+    }
+    .form{
+        min-width: auto;
+    }
+    .pageTitle{
+        font-size: 1.4em;
+    }
+}
