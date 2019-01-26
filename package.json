@@ -1,0 +1,21 @@
+{
+  "name": "Movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nodemon tape ./test/test.js | tap-spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
